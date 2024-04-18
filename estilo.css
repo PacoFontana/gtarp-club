@@ -1,0 +1,115 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: #ffba00;
+}
+
+.menu a {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ffc849; /* Cambia el color de fondo al pasar el ratón */
+}
+
+body {
+    background-image: url('imagenes/background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    /*background-position: center center;*/
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    overflow: hidden; /* Para ocultar la imagen al principio */
+}
+
+.logo img {
+    max-width: 100%; /* Para asegurarse de que la imagen no exceda el ancho del contenedor */
+    max-height: 100%; /* Para asegurarse de que la imagen no exceda la altura del contenedor */
+    animation: caidaDesdeArriba 1.5s ease forwards;
+    opacity: 0; /* Comenzar con la imagen transparente */
+}
+
+@keyframes caidaDesdeArriba {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0; /* Comenzar con la imagen transparente */
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; /* Terminar con la imagen visible */
+    }
+}
+
+
+/* Estilos para el texto y el widget */
+.texto-y-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    text-align: center;
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+    text-align: left;
+}
+
+.contacto-info {
+    margin: 5px 0;
+}
+
+@font-face {
+    font-family: "gtafont";
+    src: url(PRICEDOWN\ BL.OTF);
+}
+
+.contacto {
+    color: #000;
+    width: 100%;
+    height: 100%; /* Altura del cuadrado */
+    background-color: #ffba00; /* Color del cuadrado */
+}
+
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.contorno-negro {
+    font-family: "gtafont";
+    color: white; /* Color de la letra */
+    text-shadow: 
+        -3px -3px 0 #000,  
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000; /* Sombras para crear el contorno negro */
+}
+
